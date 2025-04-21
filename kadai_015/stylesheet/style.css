@@ -177,6 +177,33 @@ p {
   font-family: 'Lora', serif;
 }
 
+/* ----------------------------------------------- シェフ */
+ /* aboutクラスのあとに"私たちについて"の文字を追加  */
+.chef::after {
+  content: "シェフ";
+}
+
+ /* section_titleに擬似要素を追加 */
+.section_title::after {
+
+  /* 疑似要素はデフォルトでインライン要素のためブロック要素に変更 */
+  display: block;
+
+  /* サブタイトル文字の大きさや余白を設定 */
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px 0 16px;
+
+  /* 下線の幅を100pに設定 */
+  width: 100px;
+
+  /* 下線を直線・1px・黒色に設定 */
+  border-bottom: solid 1px #000000;
+}
+
+.chef_us_bg {
+  background-color: #fdf5e6;
+}
 
 
 
